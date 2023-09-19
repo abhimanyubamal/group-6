@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 * {
     text-decoration: none !important;
     list-style-type: none !important;
@@ -15,6 +16,9 @@
     --font-size-primary: 16px;
     --font-size-heading: 36px;
     --hero-section-width: 50%;
+    --footer-logo-width: 75%;
+    --footer-logo-height: 50%;
+    --footer-col-margin: 0;
 }
 
 html,
@@ -22,11 +26,30 @@ body {
     overflow-x: hidden;
 }
 
-body{
+.links a{
+    color: white;
+    opacity: 0.7;
+}
+
+.links a:hover{
+    opacity: 1;
+    -webkit-text-stroke: 1px white;
+}
+
+.footer-links a{
+    color: white;
+    margin-left: 10px;
+}
+
+.footer-links a:hover{
+    -webkit-text-stroke: 1px white;
+}
+
+body {
     font-family: var(--font-primary), sans-serif;
 }
 
-.fs-primary{
+.fs-primary {
     font-size: var(--font-size-primary);
 }
 
@@ -198,7 +221,7 @@ label>span::after {
     background-color: #E5E5E5;
 }
 
-.white-line{
+.white-line {
     position: absolute;
     bottom: 30px;
     width: 100%;
@@ -273,18 +296,20 @@ label>span::after {
         font-size: 36px;
     }
 }
+
 @media (min-width: 1500px) {
+
     .container,
-        .container-lg,
-        .container-md,
-        .container-sm{
-            max-width: 1440px !important;
-        }
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 1440px !important;
+    }
 }
 
 @media (max-width: 1400px) {
     :root {
-        --logo-width:25%;
+        --logo-width: 25%;
         --nav-link-margin: 7px;
         --nav-button-margin: 12px;
     }
@@ -300,9 +325,12 @@ label>span::after {
 }
 
 @media (max-width: 992px) {
-    :root{
+    :root {
         --hero-section-width: 67%;
         --logo-width: 33%;
+        --footer-logo-width: 100%;
+        --footer-logo-height: 100%;
+        --footer-col-margin: 24px;
     }
 
     #label {
@@ -328,7 +356,7 @@ label>span::after {
 }
 
 @media (max-width: 576px) {
-    :root{
+    :root {
         --logo-width: 66%;
         --hero-section-width: 100%;
     }
