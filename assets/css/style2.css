@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); 
+
+.S1-head {
+    color: var(--primary-text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.S2-head {
+    color: var(--primary-text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.S3-head {
+    max-width: 620px;
+    color: var(--primary-text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.S4-head {
+    color: var(--primary-text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.img-radius {
+    border-radius: 16px;
+}
+
+.S1-para,
+.S2-para,
+.S3-para,
+.S4-para {
+    max-width: 620px;
+    color: var(--primary-text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    opacity: 0.7;
+}
+
+.red-line {
+    top: 0;
+}
+
+.pl-163 {
+    padding-left: 163px;
+}
+
+.py-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.bg-grey {
+    background-color: #E5E5E5;
+}
