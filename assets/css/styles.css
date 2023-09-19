@@ -1,76 +1,99 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
     text-decoration: none !important;
     list-style-type: none !important;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary-text-color: #000000;
-    --primary-button-color: #C2190E;
+    --primary-color: #C2190E;
+    --logo-width: 30%;
+    --nav-link-margin: 15px;
+    --nav-button-margin: 22px;
+    --font-primary: 'Poppins';
+    --font-size-primary: 16px;
+    --font-size-heading: 36px;
+    --hero-section-width: 50%;
 }
 
-.menu{
-    display: none !important;
+html,
+body {
+    overflow-x: hidden;
 }
 
-.menu a{
+body{
+    font-family: var(--font-primary), sans-serif;
+}
+
+.fs-primary{
+    font-size: var(--font-size-primary);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
     color: var(--primary-text-color);
 }
 
-.menu a:hover{
-    -webkit-text-stroke: 1px var(--primary-button-color);
+.menu a:hover {
+    -webkit-text-stroke: 1px var(--primary-color);
 }
 
-.nav-button{
+.nav-button {
     padding: 6px 22px;
     border-radius: 17.5px;
-    background: var(--primary-button-color);
+    background: var(--primary-color);
     color: white !important;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: all 300ms linear;
 }
 
-.nav-button:hover{
+.nav-button:hover {
     background-color: white;
-    color: var(--primary-button-color) !important;
-    border-color: var(--primary-button-color) ;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color);
 }
 
-.bg-hero-section{
+.bg-hero-section {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 5.73%, rgba(0, 0, 0, 0.50) 39.06%), url("../images/hero-section-image.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
 }
 
-#label{
+#label {
     position: relative;
-    display: block;
+    display: none;
     width: 20px;
     height: 20px;
     cursor: pointer;
+    z-index: 2;
 }
 
-label>span{
+label>span {
     display: block;
     content: "";
     position: relative;
     width: 20px;
     height: 5px;
-    background-color: var(--primary-button-color);
+    background-color: var(--primary-color);
     top: 0;
     left: 0;
     transition: all 300ms linear;
     border-radius: 5px;
 }
 
-label>span::before{
+label>span::before {
     display: block;
     content: "";
     position: absolute;
     width: 20px;
     height: 5px;
-    background-color: var(--primary-button-color);
+    background-color: var(--primary-color);
     top: -7px;
     left: 0;
     transition: all 300ms linear;
@@ -83,18 +106,18 @@ label>span::after {
     position: absolute;
     width: 20px;
     height: 5px;
-    background-color: var(--primary-button-color);
+    background-color: var(--primary-color);
     top: 7px;
     left: 0;
     transition: all 300ms linear;
     border-radius: 5px;
 }
 
-.active>span{
+.active>span {
     background-color: transparent;
 }
 
-.active>span::before{
+.active>span::before {
     top: 0;
     transform: rotate(45deg);
 }
@@ -104,12 +127,68 @@ label>span::after {
     transform: rotate(-45deg);
 }
 
-@media (min-width: 992px){
-    #label{
-        display: none !important;
+.active .menu {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.active .menu a {
+    margin: 0 !important;
+    color: white;
+}
+
+.active .menu a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 1400px) {
+    :root {
+        --logo-width:25%;
+        --nav-link-margin: 7px;
+        --nav-button-margin: 12px;
     }
 
-    .menu{
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --logo-width: 20%;
+        --nav-link-margin: 2px;
+        --nav-button-margin: 4px;
+    }
+}
+
+@media (max-width: 992px) {
+    :root{
+        --hero-section-width: 67%;
+        --logo-width: 33%;
+    }
+
+    #label {
         display: block !important;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transform: translateX(100%);
+        background: linear-gradient(90deg, rgba(117, 56, 56, 0.329), rgba(117, 31, 31, 0.568));
+        backdrop-filter: blur(16px);
+        visibility: hidden;
+        transition: all 300ms;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    :root{
+        --logo-width: 66%;
+        --hero-section-width: 100%;
     }
 }
