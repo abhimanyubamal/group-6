@@ -1,3 +1,40 @@
 *{
+    text-decoration: none !important;
+    list-style-type: none !important;
     box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #000000;
+    --primary-button-color: #C2190E;
+}
+
+.menu a{
+    color: var(--primary-text-color);
+}
+
+.menu a:hover{
+    -webkit-text-stroke: 1px var(--primary-button-color);
+}
+
+.nav-button{
+    padding: 6px 22px;
+    border-radius: 17.5px;
+    background: var(--primary-button-color);
+    color: white !important;
+    border: 1px solid transparent;
+    transition: all 300ms linear;
+}
+
+.nav-button:hover{
+    background-color: white;
+    color: var(--primary-button-color) !important;
+    border-color: var(--primary-button-color) ;
+}
+
+.bg-hero-section{
+    background: url("../images/hero-section-image.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
 }
