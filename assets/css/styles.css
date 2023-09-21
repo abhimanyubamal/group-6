@@ -21,22 +21,22 @@
     --footer-col-margin: 0;
 }
 
-.links a{
+.links a {
     color: white;
     opacity: 0.7;
 }
 
-.links a:hover{
+.links a:hover {
     opacity: 1;
     -webkit-text-stroke: 1px white;
 }
 
-.footer-links a{
+.footer-links a {
     color: white;
     margin-left: 10px;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     -webkit-text-stroke: 1px white;
 }
 
@@ -44,7 +44,7 @@ body {
     font-family: var(--font-primary), sans-serif;
 }
 
-.vh-75{
+.vh-75 {
     height: 75vh;
 }
 
@@ -87,11 +87,11 @@ body {
     background-size: cover;
 }
 
-.heading{
+.heading {
     position: relative;
 }
 
-.heading::after{
+.heading::after {
     content: "";
     position: absolute;
     top: -6px;
@@ -179,11 +179,11 @@ label>span::after {
 
 /* STYLES2 */
 
-.S-img{
+.S-img {
     transition: all 300ms;
 }
 
-.S-img:hover{
+.S-img:hover {
     transform: scale(1.2);
 }
 
@@ -203,15 +203,15 @@ label>span::after {
     margin-right: var(--nav-link-margin);
 }
 
-.margin-nav-button{
+.margin-nav-button {
     margin-right: var(--nav-button-margin);
 }
 
-.link-hover{
+.link-hover {
     position: relative;
 }
 
-.link-hover::after{
+.link-hover::after {
     content: "";
     height: 2px;
     bottom: -4px;
@@ -224,7 +224,7 @@ label>span::after {
     transition: all 300ms;
 }
 
-.link-hover:hover::after{
+.link-hover:hover::after {
     transform: scaleX(1);
 }
 
@@ -273,6 +273,51 @@ label>span::after {
 
 .white-line {
     border-bottom: 1px solid white;
+}
+
+.hero-section-width {
+    width: var(--hero-section-width);
+}
+
+.heading-font-size {
+    font-size: var(--font-size-heading);
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.footer-margin-column {
+    margin-top: var(--footer-col-margin);
+}
+
+.footer-logo-width {
+    width: var(--footer-logo-width);
+}
+
+.footer-logo-height {
+    height: var(--footer-logo-height);
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.nav-padding {
+    padding: 20px 0;
+}
+
+.logo-width {
+    width: var(--logo-width);
+}
+
+footer {
+    padding-bottom: 60px;
+}
+
+.footer-padding {
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 @media (min-width:320px) {
@@ -342,7 +387,7 @@ label>span::after {
         font-size: 36px;
     }
 
-    .vh-lg-100{
+    .vh-lg-100 {
         height: 100vh;
     }
 }
@@ -375,7 +420,7 @@ label>span::after {
         --font-size-primary: 16px;
     }
 
-    .S-img:hover{
+    .S-img:hover {
         transform: scale(1);
     }
 
