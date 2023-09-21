@@ -16,7 +16,7 @@
     --font-size-primary: 16px;
     --font-size-heading: 36px;
     --hero-section-width: 50%;
-    --footer-logo-width: 75%;
+    --footer-logo-width: 100%;
     --footer-logo-height: 50%;
     --footer-col-margin: 0;
 }
@@ -179,6 +179,14 @@ label>span::after {
 
 /* STYLES2 */
 
+.S-img{
+    transition: all 300ms;
+}
+
+.S-img:hover{
+    transform: scale(1.2);
+}
+
 .S1-head,
 .S2-head,
 .S3-head,
@@ -189,6 +197,14 @@ label>span::after {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.margin-nav-link {
+    margin-right: var(--nav-link-margin);
+}
+
+.margin-nav-button{
+    margin-right: var(--nav-button-margin);
 }
 
 .link-hover{
@@ -256,7 +272,7 @@ label>span::after {
 }
 
 .white-line {
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 
 @media (min-width:320px) {
@@ -334,8 +350,8 @@ label>span::after {
 @media (max-width: 1400px) {
     :root {
         --logo-width: 25%;
-        --nav-link-margin: 7px;
-        --nav-button-margin: 12px;
+        --nav-link-margin: 10px;
+        --nav-button-margin: 14px;
     }
 
 }
@@ -343,8 +359,9 @@ label>span::after {
 @media (max-width: 1200px) {
     :root {
         --logo-width: 20%;
-        --nav-link-margin: 2px;
-        --nav-button-margin: 4px;
+        --nav-link-margin: 8px;
+        --nav-button-margin: 12px;
+        --font-size-primary: 14px;
     }
 }
 
@@ -355,6 +372,11 @@ label>span::after {
         --footer-logo-width: 100%;
         --footer-logo-height: 100%;
         --footer-col-margin: 24px;
+        --font-size-primary: 16px;
+    }
+
+    .S-img:hover{
+        transform: scale(1);
     }
 
     #label {
